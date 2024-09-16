@@ -1,14 +1,8 @@
 import React, { useRef } from "react";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import { useSectionInView } from "../assets/lib/hooks";
-import {
-  skillsDataCMS,
-  skillsDataDesign,
-  skillsDataWeb,
-} from "../assets/lib/data";
 import { useTheme } from "../context/theme-context";
 import { useLanguage } from "../context/language-context";
-import SkillSection from "./SkillSection";
 import RadialGradient from "./RadialGradient";
 import { motion, useScroll, useTransform } from "framer-motion";
 
