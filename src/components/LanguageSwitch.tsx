@@ -7,7 +7,7 @@ const LanguageSwitch: React.FC = () => {
 
   return (
     <React.Fragment>
-      <div className="language-switch-container">
+      <div className="language-switch-container hidden">
         <input
           className="tgl tgl-style"
           id="toggle-language"
