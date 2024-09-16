@@ -190,9 +190,9 @@ ${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
             }}
           >
             <p className="text-[--black] mb-6">
-              <span className="text-[--orange]">&lt;</span>
+              <span className="text-[--orange]"></span>
               {language === "DE" ? contactData.title.de : contactData.title.en}
-              <span className="text-[--orange]">/&gt;</span>
+              <span className="text-[--orange]"></span>
             </p>
 
             <h2 className="text-[--black] text-center">

@@ -44,23 +44,23 @@ const TechStack: React.FC = () => {
             }}
           >
             <p className="font-black mb-6">
-              <span className="text-[--orange]">&lt;</span>Skills
-              <span className="text-[--orange]">/&gt;</span>
+              <span className="text-[--orange]"></span>How does it work?
+              <span className="text-[--orange]"></span>
             </p>
             <h2>
               {language === "DE"
                 ? "Meine Techstack und Skills"
-                : "My TechStack and Skills"}
+                : "Getting started is easy!"}
             </h2>
           </motion.div>
         </div>
         <div className="flex gap-40 justify-center max-lg:flex-col">
           <div className="w-1/3 max-lg:w-full">
-            <SkillSection skillsData={skillsDataWeb} theme={theme} />
-          </div>
-          <div className="flex flex-col h-[inherit]  justify-around max-lg:gap-40">
-            <SkillSection skillsData={skillsDataDesign} theme={theme} />
-            <SkillSection skillsData={skillsDataCMS} theme={theme} />
+           
+                <h2 className="h-1">Step One:</h2><br></br><br></br><br></br><br></br>
+                <p className="h-1">Press the button below to sign-up with your email and phone number, sign-up on our website, or sign-up during the checkout process @ www.needweedusa.com</p><br></br><br></br><br></br><br></br>
+                
+
           </div>
         </div>
       </section>

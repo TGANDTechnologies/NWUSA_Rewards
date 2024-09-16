@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             trigger={
               <Link
                 to="#"
-                className="text-white text-2xl font-bold hover:text-orange"
+                className="text-white text-2xl font-bold hover:text-[#319C63]"
               >
                 {language === "DE" ? link.de : link.en}
               </Link>
@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
                     }`}
                   >
                     <button
-                      className="fixed top-0 right-0 bg-orange p-4 z-10 rounded-2xl m-4 hover:bg-lightblue transition-all duration-500 dark-shadow text-white"
+                      className="fixed top-0 right-0 bg-[#319C63] p-4 z-10 rounded-2xl m-4 hover:bg-lightblue transition-all duration-500 dark-shadow text-white"
                       onClick={() => {
                         close();
                       }}
@@ -76,7 +76,7 @@ const Footer: React.FC = () => {
             }
           >
             {typeof social.icon === "function" ? (
-              <social.icon className={`stroke-orange`} />
+              <social.icon className={`stroke-[#319C63]`} />
             ) : (
               <img
                 src={social.icon}

@@ -47,9 +47,9 @@ const AboutMe: React.FC = () => {
             }}
           >
             <p className="text-[--black] mb-6">
-              <span className="text-orange">&lt;</span>
+              <span className="text-orange"></span>
               {language === "DE" ? aboutMeData.title : aboutMeData.title_EN}
-              <span className="text-orange">/&gt;</span>
+              <span className="text-orange"></span>
             </p>
 
             <h2 className="text-[--black] text-center max-lg:text-left break-words">
@@ -79,7 +79,7 @@ const AboutMe: React.FC = () => {
           >
             {paragraphs.map((paragraph, index) => (
               <SwiperSlide
-                className="bg-[--darkblue] text-[--white] flex flex-col justify-center items-start gap-24 rounded-2xl p-20 border-solid border-[0.4rem] border-[--lightblue] hover:border-orange duration-500 transition-all text-left max-lg:p-10 cursor-grab"
+                className="bg-[--darkblue] text-[--white] flex flex-col justify-center items-start gap-24 rounded-2xl p-20 border-solid border-[0.4rem] border-[--lightblue] hover:border-green duration-500 transition-all text-left max-lg:p-10 cursor-grab"
                 key={index}
               >
                 <div className="flex gap-6 flex-row justify-start items-center max-lg:flex-col max-lg:justify-center max-lg:text-center ">
@@ -97,8 +97,8 @@ const AboutMe: React.FC = () => {
                 <div className="flex flex-row gap-10 max-lg:flex-col">
                   <div className="flex flex-col gap-4 items-center justify-between -mt-10 -mb-10 max-lg:flex-row max-lg:m-0">
                     <p className="text-white">
-                      <span className="text-orange">&lt;</span>h3
-                      <span className="text-orange">/&gt;</span>
+                      <span className="text-orange"></span>h3
+                      <span className="text-orange"></span>
                     </p>
                     <div className="flex justify-between items-center w-1 h-[100%] max-lg:flex-row max-lg:w-[10rem]  max-lg:bg-lightblue">
                       <div></div>
@@ -106,8 +106,8 @@ const AboutMe: React.FC = () => {
                       <div></div>
                     </div>
                     <p className="text-white">
-                      <span className="text-orange">&lt;</span>h3
-                      <span className="text-orange">/&gt;</span>
+                      <span className="text-orange"></span>h3
+                      <span className="text-orange"></span>
                     </p>
                   </div>
                   <div>

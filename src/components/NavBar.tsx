@@ -64,13 +64,13 @@ const NavBar: React.FC = () => {
 
     const leftArrow = isLinkActive && (
       <span className="text-[--orange] absolute -left-5 top-0 max-lg:hidden">
-        &lt;
+        
       </span>
     );
 
     const rightArrow = isLinkActive && (
       <span className="text-[--orange] absolute top-0 -right-10 max-lg:hidden">
-        /&gt;
+        
       </span>
     );
 
@@ -110,7 +110,7 @@ const NavBar: React.FC = () => {
               {link.en === activeSection ? (
                 <div>
                   <span className="text-[--orange] absolute -left-5 top-0">
-                    &lt;
+                    
                   </span>
                   {language === "DE" ? link.de : link.en}
                   {/* {link.de.toLocaleUpperCase()} */}

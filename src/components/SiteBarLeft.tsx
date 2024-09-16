@@ -33,7 +33,7 @@ const SiteBarLeft: React.FC = () => {
             }
           >
             {typeof social.icon === "function" ? (
-              <social.icon className={`stroke-orange`} />
+              <social.icon className={`stroke-[#319C63]`} />
             ) : (
               <img
                 src={social.icon}

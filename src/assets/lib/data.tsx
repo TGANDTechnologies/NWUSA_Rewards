@@ -34,36 +34,38 @@ import nextjsiconwhite from "../../assets/icons/nextjsiconwhite.svg";
 import expressiconwhite from "../../assets/icons/expressiconwhite.svg";
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
 import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
+import { RiMoneyDollarCircleLine } from "react-icons/ri";
+import { TbCannabis } from "react-icons/tb";
 import Imprint from "../../components/Imprint";
 import Privacy from "../../components/Privacy";
 
 export const headerIntroData = {
   title: {
     de: "Hi, ich bin Alpay",
-    en: "Hi, I'm Alpay",
+    en: "Welcome to Need Weed USA Rewards!",
   },
-  subtitle: "Fullstack Developer ",
+  subtitle: "~Exclusive Perks and Discounts~",
   description: {
     de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
-    en: "I'm Alpay, a fullstack developer with the goal of advancing my career and participating in inspiring projects. Here I present my work and my passion for web development. Let's shape digital solutions together and shape the future!",
+    en: "Introducing the Need Weed Rewards —your chance to enjoy exclusive perks! As a member, you'll earn free products, cash rewards, and special discounts on every purchase. Plus, you'll get early access to exciting events, giveaways, exclusive offers and more. Join today and start enjoying the benefits!",
   },
   buttons: [
     {
       name: "Contact",
       label: {
         de: "Kontaktiere mich",
-        en: "Contact me",
+        en: "Sign Up",
       },
-      icon: FiMail,
+      icon: RiMoneyDollarCircleLine,
       color: "main-btn",
     },
     {
       name: "Projects",
       label: {
         de: "Meine Projekte",
-        en: "My Projects",
+        en: "Visit Need Weed",
       },
-      icon: FiGithub,
+      icon: TbCannabis,
       color: "secondary-btn",
     },
   ],
@@ -72,11 +74,11 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Tasty App",
+    title: "Want to earn even more rewards with NeedWeedUSA?",
     description:
       "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
     description_EN:
-      "A recipe app that we built as a team with React and the MealDB API. I was the front-end developer and programmed features like voice search or print to PDF. The design was created with Figma. The website is responsive and mobile-optimized.",
+    "Join our Promo Team and start earning extra cash and free products! Promote our brand on social media and share the latest updates, offers, and products with your followers. In return, you'll receive exclusive rewards including cash bonuses and free products. Sign up to become a part of our Promo Team and start reaping the rewards today!",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -100,77 +102,12 @@ export const projectsData = [
       projectcolor: "#70B9BE",
     },
   },
-  {
-    title: "Silentmoon",
-    description:
-      "Eine Yoga und Meditations App, die wir als Team mit React, MongoDB, Express und Node.js gebaut haben. Meine Aufgabe als Gitmaster und Backend Entwickler bestand darin, das Backend mit Anbindung anhand einer Restful API zu programmieren und die Datenbank in MongoDB zu modellieren.",
-    description_EN:
-      "A yoga and meditation app that we built as a team with React, MongoDB, Express and Node.js. My task as a gitmaster and backend developer was to program the backend with connection using a restful API and to model the database in MongoDB.",
-    technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "Spotify Api", icon: spotifyicon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-    ],
-    image: silentmoonMockup,
-    deploymenturl: "https://silentmoon-grpw.onrender.com/",
-    githuburl:
-      "https://github.com/AlpayC/Fullstack_Abschlussprojekt_SilentMoon",
-    githubicon: FiGithub,
-    deploymenticon: FiLink,
-    colors: {
-      main: "main-btn",
-      second: "secondary-btn",
-      icon: "white",
-      projectcolor: "#FFD5BD",
-    },
-  },
-  {
-    title: "Furniture Organizer",
-    description:
-      "Eine Möbel-Organizer App, die wir als Duo-Team mit React, MongoDB, Express und Node.js programmiert haben. Als Gitmaster habe ich die Verknüpfung des Frontends mit dem Backend und die Datenbankmodellierung übernommen. Die App ist responsive und mobile-optimiert.",
-    description_EN:
-      "A furniture organizer app that we programmed as a duo team with React, MongoDB, Express and Node.js. As a gitmaster, I took over the connection of the frontend to the backend and the database modeling. The app is responsive and mobile-optimized.",
-    technologies: [
-      { name: "Html", icon: htmlicon },
-      { name: "CSS", icon: cssicon },
-      { name: "JavaScript", icon: javascripticon },
-      { name: "React", icon: reacticon },
-      { name: "JWT & Bcrypt", icon: jwticon },
-      { name: "Axios", icon: axiosicon },
-      { name: "MongoDB", icon: mongodbicon },
-      { name: "Express", icon: expressiconwhite },
-      { name: "Node.js", icon: nodejsicon },
-      { name: "Figma", icon: figmaicon },
-      { name: "Render", icon: rendericon },
-      { name: "Trello", icon: trelloicon },
-    ],
-    image: instorMockup,
-    deploymenturl: "https://mern-haushaltsbuch.onrender.com/",
-    githuburl: "https://github.com/AlpayC/Furniture_MERN",
-    githubicon: FiGithub,
-    deploymenticon: FiLink,
-    colors: {
-      main: "main-btn",
-      second: "secondary-btn",
-      icon: "white",
-      projectcolor: "#E3964A",
-    },
-  },
 ] as const;
 
 export const liveTickerData = {
   content: {
     de: "Weitere Projekte auf Github",
-    en: "More Projects on Github",
+    en: "Sometimes We All Need Weed",
   },
 } as const;
 
@@ -178,78 +115,13 @@ export const skillsDataWeb = [
   {
     skillsTitle: "WebDevelopment",
     skills: [
-      {
-        title: "HTML",
-        hash: "#html",
-        icon: htmlicon,
-        color: "#F1662A",
-      },
-      {
-        title: "CSS",
-        hash: "#CSS",
-        icon: cssicon,
-        color: "#1572B6",
-      },
-      {
-        title: "JavaScript",
-        hash: "#JavaScript",
-        icon: javascripticon,
-        color: "#F7DF1E",
-      },
-      {
-        title: "TypeScript",
-        hash: "#TypeScript",
-        icon: typescripticon,
-        color: "#007ACC",
-      },
-      {
-        title: "React",
-        hash: "#React",
-        icon: reacticon,
-        color: "#61DAFB",
-      },
-      {
-        title: "Next.js",
-        hash: "#Next.js",
-        icon: [nextjsicon, nextjsiconwhite],
-        color: ["#000000", "#FFFFFF"],
-      },
-      {
-        title: "Node.js",
-        hash: "#Node.js",
-        icon: nodejsicon,
-        color: "#339933",
-      },
-      {
-        title: "Tailwind",
-        hash: "#Tailwind",
-        icon: tailwindcssicon,
-        color: "#38B2AC",
-      },
-      {
-        title: "MongoDB",
-        hash: "#MongoDB",
-        icon: mongodbicon,
-        color: "#449C45",
-      },
-      {
-        title: "Vue.js",
-        hash: "#Vue.js",
-        icon: vuejsicon,
-        color: "#4FC08D",
-      },
-      {
-        title: "Express",
-        hash: "#Express",
-        icon: [expressicon, expressiconwhite],
-        color: ["#000000", "#FFFFFF"],
-      },
+      
       {
         title: "SASS/SCSS",
         hash: "#SASS/SCSS",
         icon: sassscssicon,
         color: "#CC6699",
-      },
+      }
     ],
   },
 ] as const;
@@ -310,8 +182,8 @@ export const FooterLinks = [
 ] as const;
 
 export const sideBarRightMail = {
-  link: "mailto:myemail@com",
-  text: "myemail@com",
+  link: "mailto:admin@needweedusa.com",
+  text: "admin@needweedusa.com",
 } as const;
 
 export const sideBarLeftSocials = [
@@ -326,7 +198,7 @@ export const sideBarLeftSocials = [
     altimgname: "github",
   },
   {
-    link: "mailto:myemail@com",
+    link: "mailto:admin@needweedusa.com",
     icon: FiMail,
     altimgname: "mail",
   },
@@ -335,12 +207,12 @@ export const sideBarLeftSocials = [
 export const quotesData = [
   {
     de: '"Es ist überhaupt nicht wichtig, es beim ersten Mal richtig zu machen. Es ist entscheidend, es beim letzten Mal richtig zu machen."',
-    en: `"It's not at all important to get it right the first time. It's vitally important to get it right the last time."`,
-    author: "Andrew Hunt",
+    en: `"Hemp is the greatest plant on Earth. It can do more good for this planet than any other thing known to man."`,
+    author: "Jack Herer",
   },
   {
     de: '"Das Web ist wie eine Leinwand und der Code ist die Farbe. Erschaffe dein Meisterwerk."',
-    en: `"The web is like a canvas, and code is the paint. Create your masterpiece."`,
+    en: `"Herb is the healing of a nation" - Bob Marley`,
   },
 ] as const;
 

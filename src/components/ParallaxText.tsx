@@ -133,11 +133,11 @@ export default function LiveTicker() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="text-[--orange]">&lt;</span>
+            <span className="text-[--orange]"></span>
             {language === "DE"
               ? liveTickerData.content.de
               : liveTickerData.content.en}
-            <span className="text-[--orange]">/&gt;</span>
+            <span className="text-[--orange]"></span>
           </Link>
         </ParallaxText>
       </div>
