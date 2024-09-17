@@ -29,7 +29,7 @@ export const headerIntroData = {
     de: "Hi, ich bin Alpay",
     en: "Welcome to Need Weed USA Rewards!",
   },
-  subtitle: "~Exclusive Perks and Discounts~",
+  subtitle: "Perks, Rewards & Discounts",
   description: {
     de: "Ich bin Alpay, ein Fullstack-Entwickler mit dem Ziel, meine Karriere voranzutreiben und an inspirierenden Projekten teilzunehmen. Hier präsentiere ich meine Arbeiten und meine Leidenschaft für die Webentwicklung. Lassen Sie uns gemeinsam digitale Lösungen gestalten und die Zukunft formen!",
     en: "Introducing the Need Weed Rewards —your chance to enjoy exclusive perks! As a member, you'll earn free products, cash rewards, and special discounts on every purchase. Plus, you'll get early access to exciting events, giveaways, exclusive offers and more. Join today and start enjoying the benefits!",
@@ -59,11 +59,11 @@ export const headerIntroData = {
 
 export const projectsData = [
   {
-    title: "Want to earn even more rewards with NeedWeedUSA?",
+    title: "Help us Spark the movement!",
     description:
       "Eine Rezepte App, die wir als Team mit React und der MealDB API gebaut haben. Ich war der Front-End Entwickler und habe Features wie Voice Search oder Print to PDF programmiert. Das Design wurde mit Figma erstellt. Die Website ist responsive und mobile-optimiert.",
     description_EN:
-    "Join our Promo Team and start earning extra cash and free products! Promote our brand on social media and share the latest updates, offers, and products with your followers. In return, you'll receive exclusive rewards including cash bonuses and free products. Sign up to become a part of our Promo Team and start reaping the rewards today!",
+    "To all passionate pot smokers! 🚀 Be part of the next big thing in cannabis by joining our Street Team. Help spread the word, promote us on social media, and get cash, free products, and exclusive rewards. 🌿 Get in on the ground floor of the next big movement in cananbis and start earning today!",
     technologies: [
       { name: "Html", icon: htmlicon },
       { name: "CSS", icon: cssicon },
@@ -92,7 +92,7 @@ export const projectsData = [
 export const liveTickerData = {
   content: {
     de: "Weitere Projekte auf Github",
-    en: "Sometimes We All Need Weed",
+    en: "We All Need Weed Sometimes",
   },
 } as const;
 
@@ -255,7 +255,7 @@ export const contactData = {
   },
   description: {
     de: "Schreib mir eine Nachricht und ich melde mich bei dir.",
-    en: "Write me a message and I will get back to you.",
+    en: "Have any comments or questions?",
   },
   inputfields: [
     {
@@ -327,7 +327,7 @@ export const contactData = {
   privacyOptIn: {
     checkbox: {
       de: "Ich stimme zu, dass Alpay meine personenbezogenen Daten (Name und E-Mail-Adresse) verwenden darf, um mit mir Kontakt aufzunehmen.",
-      en: "I agree that Alpay may use my personal data (name and e-mail address) to contact me.",
+      en: "I agree that NWUSA may use my personal data (name and e-mail address) to contact me.",
     },
     description: {
       de: "Durch Übermittlung dieser Anfrage bestätigen Sie, dass Sie die Datenschutzerklärung gelesen haben",

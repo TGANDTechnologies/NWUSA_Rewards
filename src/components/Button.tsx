@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 interface ButtonProps {
   onClick?: () => void;
-  label?: string;
-  value?: string;
-  className?: string;
-  link?: string;
-  iconcolor?: string;
-  iconSVG?: React.FC<{ className: string }>;
-  buttoncolor?: string;
-  buttonhovercolor?: string;
+  label?: any;
+  value?: any;
+  className?: any;
+  link?: any;
+  iconcolor?: any;
+  iconSVG?: any;
+  buttoncolor?: any;
+  buttonhovercolor?: any;
   type?: "button" | "submit" | "reset";
   elementType?: "input" | "button";
 }
@@ -37,7 +37,7 @@ const Button: React.FC<ButtonProps> = ({
     return <input {...commonProps} value={value}></input>;
   } else {
     return (
-      <Link to={link || ""} className="no-underline">
+      <Link to={link ? link : ""} className="no-underline">
         <button {...commonProps}>
           {IconSVGComponent ? (
             <IconSVGComponent className={"w-max h-10"} />

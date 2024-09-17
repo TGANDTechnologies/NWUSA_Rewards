@@ -79,15 +79,7 @@ const Home: React.FC = () => {
                 scale="scale-y-100"
                 position="-top-24"
               />
-              <Divider
-                thickness="0.25rem"
-                direction="middle-to-inner-left"
-                color="lightblue"
-                height="middle"
-                dividerStyle="solid"
-              />
 
-              <LazyAboutMe />
               <Divider
                 thickness="0.25rem"
                 direction="inner-left-to-middle"

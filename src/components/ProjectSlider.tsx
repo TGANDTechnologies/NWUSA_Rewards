@@ -73,11 +73,11 @@ const ProjectSlider: React.FC = () => {
             >
               <p className="text-[--white] mt-16 mb-6">
                 <span className="text-[--orange]"></span>
-                {language === "DE" ? "Projekte" : "Projects"}
+                {language === "DE" ? "Projekte" : "Earn Cash"}
                 <span className="text-[--orange]"></span>
               </p>
               <h2 className="text-[--white] mb-16">
-                {language === "DE" ? "Meine Projekte" : "My Projects"}
+                {language === "DE" ? "Meine Projekte" : "Join the NWUSA Street Team"}
               </h2>
             </motion.div>
             <Swiper
@@ -108,40 +108,15 @@ const ProjectSlider: React.FC = () => {
                         ? project.description
                         : project.description_EN}
                     </p>
-                    <div className="technologies">
-                      <h3>
-                        {language === "DE" ? "Technologien" : "Technologies"}
-                      </h3>
-                      <div className="grid grid-cols-6 gap-10 p-4">
-                        {project.technologies.map(
-                          (technology, innerIndex: number) => (
-                            <img
-                              key={innerIndex}
-                              src={technology.icon}
-                              alt={`${project.title}-icon`}
-                              className="h-[5rem] w-[60%] "
-                              data-tooltip-id="my-tooltip"
-                              data-tooltip-content={technology.name}
-                            />
-                          )
-                        )}
-                      </div>
-                    </div>
+                    
                     <div className="buttons flex gap-10">
                       <Button
-                        label="Live Demo"
-                        link={project.deploymenturl}
-                        iconSVG={project.deploymenticon}
-                        buttoncolor={project.colors.main}
-                        iconcolor={project.colors.icon}
-                        onClick={notifyServerRequest}
-                      />
-                      <Button
-                        label="Github Repository"
-                        link={project.githuburl}
-                        iconSVG={project.githubicon}
-                        buttoncolor={project.colors.main}
-                        iconcolor={project.colors.icon}
+                        label="Join NWUSA Street Team"
+                        link={'https://platform.mobile-text-alerts.com/subscribe/NWUSA-Rewards'}
+                        iconSVG={'mask.svg'}
+                        buttoncolor={'bg-white !text-black'}
+                        iconcolor={'px-4 py-2 rounded'}
+                        onClick={console.log}
                       />
                     </div>
                   </div>
@@ -168,47 +143,23 @@ const ProjectSlider: React.FC = () => {
                   alt={project.image}
                   className="h-[35vh] w-full object-cover object-top rounded-3xl"
                 />
-                <div className="buttons flex gap-10 max-lg:flex-col">
-                  <Button
-                    label="Live Demo"
-                    link={project.deploymenturl}
-                    iconSVG={project.deploymenticon}
-                    buttoncolor={project.colors.main}
-                    iconcolor={project.colors.icon}
-                  />
-                  <Button
-                    label="Github Repository"
-                    link={project.githuburl}
-                    iconSVG={project.githubicon}
-                    buttoncolor={project.colors.main}
-                    iconcolor={project.colors.icon}
-                  />
-                </div>
+                <div className="buttons flex gap-10">
+                      <Button
+                        label="Join NWUSA Street Team"
+                        link={'https://platform.mobile-text-alerts.com/subscribe/NWUSA-Rewards'}
+                        iconSVG={'mask.svg'}
+                        buttoncolor={'bg-white !text-black'}
+                        iconcolor={'px-4 py-2 rounded'}
+                        onClick={console.log}
+                      />
+                    </div>
                 <p className="text-white  max-lg:text-4xl">
                   {language === "DE"
                     ? project.description
                     : project.description_EN}
                 </p>
 
-                <div className="technologies">
-                  <h3 className="text-white">
-                    {language === "DE" ? "Technologien" : "Technologies"}
-                  </h3>
-                  <div className="grid grid-cols-3 gap-10 p-4">
-                    {project.technologies.map(
-                      (technology, innerIndex: number) => (
-                        <img
-                          key={innerIndex}
-                          src={technology.icon}
-                          alt={`${project.title}-icon`}
-                          className="h-[5rem] w-[60%] "
-                          data-tooltip-id="my-tooltip"
-                          data-tooltip-content={technology.name}
-                        />
-                      )
-                    )}
-                  </div>
-                </div>
+                
               </article>
             ))}
           </div>
