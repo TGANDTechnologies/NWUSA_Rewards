@@ -36,7 +36,7 @@ export const headerIntroData = {
   },
   buttons: [
     {
-      name: "Contact",
+      name: "https://platform.mobile-text-alerts.com/subscribe/NWUSA-Rewards",
       label: {
         de: "Kontaktiere mich",
         en: "Sign Up",
@@ -45,7 +45,7 @@ export const headerIntroData = {
       color: "main-btn",
     },
     {
-      name: "Projects",
+      name: "https://www.needweedusa.com",
       label: {
         de: "Meine Projekte",
         en: "Visit Need Weed",
