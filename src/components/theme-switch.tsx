@@ -1,10 +1,10 @@
 import { useTheme } from "../context/theme-context";
+import { FaInstagram } from "react-icons/fa"
+import { TbCannabis } from "react-icons/tb";
 import {
   BsMoon,
   BsSun,
-  BsLinkedin,
   BsFillEnvelopeAtFill,
-  BsGithub,
 } from "react-icons/bs";
 import { sideBarLeftSocials } from "../assets/lib/data";
 import { useState, useEffect } from "react";
@@ -74,14 +74,14 @@ export default function ThemeSwitch() {
             ? "pointer-events-auto"
             : "pointer-events-none"
         }`}
-        aria-label="My Github Profile"
+        aria-label="NWUSA Website"
       >
         <Link
           to={sideBarLeftSocials[1].link}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <BsGithub />
+          <FaInstagram />
         </Link>
       </button>
       <button
@@ -99,14 +99,14 @@ export default function ThemeSwitch() {
             ? "pointer-events-auto"
             : "pointer-events-none"
         }`}
-        aria-label="My Linkedin Profile"
+        aria-label="Our Instagram Profile"
       >
         <Link
           to={sideBarLeftSocials[0].link}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <BsLinkedin />
+          <TbCannabis />
         </Link>
       </button>
       <button

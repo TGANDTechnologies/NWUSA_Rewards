@@ -176,12 +176,12 @@ export const sideBarLeftSocials = [
   {
     link: "https://www.needweedusa.com",
     icon: TbCannabis,
-    altimgname: "linkedin",
+    altimgname: "NWUSA dot com",
   },
   {
     link: "https://instagram.com/",
     icon: FaInstagram,
-    altimgname: "github",
+    altimgname: "instagram",
   },
   {
     link: "mailto:admin@needweedusa.com",

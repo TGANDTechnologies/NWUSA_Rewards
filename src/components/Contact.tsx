@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import Button from "./Button";
 import axios from "axios";
 import { contactData, toastMessages } from "../assets/lib/data.tsx";
@@ -17,7 +17,6 @@ const Contact: React.FC = () => {
   const [subject, setSubject] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [cursor, setCursor] = useState<string>("");
-  const [lastUpdatedField, setLastUpdatedField] = useState<string | null>(null);
   const { ref } = useSectionInView("Contact");
   const { language } = useLanguage();
   const { theme } = useTheme();
@@ -61,30 +60,6 @@ const Contact: React.FC = () => {
     setCursor(`${fieldName}${cursor}`);
   };
 
-  const wordWrap = (
-    text: string,
-    maxLineLength: number,
-    indentation: string
-  ) => {
-    const words = text.split(" ");
-    let lines: string[] = [];
-    let currentLine = "";
-
-    words.forEach((word) => {
-      if (currentLine.length + word.length <= maxLineLength) {
-        currentLine += word + " ";
-      } else {
-        lines.push(currentLine.trim());
-        currentLine = `${indentation}${word} `;
-      }
-    });
-
-    if (currentLine) {
-      lines.push(currentLine.trim());
-    }
-
-    return lines.join("\n");
-  };
 
   const handleInputChange = (
     e:
@@ -103,20 +78,9 @@ const Contact: React.FC = () => {
       setMessage(value);
     }
 
-    setLastUpdatedField(name);
   };
 
-  const [cursorBlink, setCursorBlink] = useState<boolean>(true);
 
-  useEffect(() => {
-    const blinkInterval = setInterval(() => {
-      setCursorBlink((prev) => !prev);
-    }, 400);
-
-    return () => {
-      clearInterval(blinkInterval);
-    };
-  }, []);
 
  
 
@@ -207,11 +171,9 @@ const Contact: React.FC = () => {
                 required
                 onFocus={() => {
                   handleInputFocus(input.name);
-                  setLastUpdatedField(input.name);
                 }}
                 onMouseEnter={() => {
                   handleInputFocus(input.name);
-                  setLastUpdatedField(input.name);
                 }}
                 onChange={handleInputChange}
                 className={`${
@@ -231,11 +193,9 @@ const Contact: React.FC = () => {
               name={contactData.textarea.name}
               onFocus={() => {
                 handleInputFocus(contactData.textarea.name);
-                setLastUpdatedField(contactData.textarea.name);
               }}
               onMouseEnter={() => {
                 handleInputFocus(contactData.textarea.name);
-                setLastUpdatedField(contactData.textarea.name);
               }}
               onChange={handleInputChange}
               className={`${
