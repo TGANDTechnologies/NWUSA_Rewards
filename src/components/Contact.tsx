@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Button from "./Button";
 import axios from "axios";
-import { Highlight, themes } from "prism-react-renderer";
 import { contactData, toastMessages } from "../assets/lib/data.tsx";
 import { useSectionInView } from "../assets/lib/hooks";
 import { useLanguage } from "../context/language-context";
@@ -119,30 +118,7 @@ const Contact: React.FC = () => {
     };
   }, []);
 
-  const codeSnippet = `
-import  { useState } from "react";
-
-// 🌈 Spreading Stardust: 
-// Crafting Cosmic Email 🌌
-
-const [sender, setSender] = "${name}${
-    lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""
-  }🚀";
-const [recipient, setRecipient] = "${email}${
-    lastUpdatedField === "email" ? (cursorBlink ? "|" : " ") : ""
-  }📧";
-const [subject, setSubject] = \n"${subject}${
-    lastUpdatedField === "subject" ? (cursorBlink ? "|" : " ") : ""
-  }✨";
-const [message, setMessage] = 
-\`Hello, intrepid traveler! 👋\n
-Across the cosmos, a message for you:\n
-"${wordWrap(message, 40, " ")}${
-    lastUpdatedField === "message" ? (cursorBlink ? "|" : " ") : ""
-  }"\n
-Wishing you stardust dreams,\n
-${name}${lastUpdatedField === "name" ? (cursorBlink ? "|" : " ") : ""}
-\``;
+ 
 
   //   const codeSnippet2 = `
   // // 🚀 Initiating Quantum Email Transmission 🪐

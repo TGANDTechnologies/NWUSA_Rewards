@@ -19,7 +19,7 @@ import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
 import { FaInstagram } from "react-icons/fa"
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
-import { FiLink, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiLink, FiMail } from "react-icons/fi";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { TbCannabis } from "react-icons/tb";
 import Imprint from "../../components/Imprint";
