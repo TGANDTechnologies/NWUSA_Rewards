@@ -17,8 +17,9 @@ import profilepicture from "../img/me2.webp";
 import caricon from "../../assets/icons/car-icon.svg";
 import travelicon from "../../assets/icons/travel-icon.svg";
 import hardwareicon from "../../assets/icons/hardware-icon.svg";
+import { FaInstagram } from "react-icons/fa"
 import { GoHome, GoPerson, GoMail, GoStack, GoProject } from "react-icons/go";
-import { FiGithub, FiLink, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiLink, FiLinkedin, FiMail } from "react-icons/fi";
 import { RiMoneyDollarCircleLine } from "react-icons/ri";
 import { TbCannabis } from "react-icons/tb";
 import Imprint from "../../components/Imprint";
@@ -77,8 +78,8 @@ export const projectsData = [
     ],
     image: tastyMockup,
     deploymenturl: "https://delightful-cheesecake-9b19f0.netlify.app/",
-    githuburl: "https://github.com/AlpayC/Frontend_Abschlussprojekt_Tasty",
-    githubicon: FiGithub,
+    githuburl: "https://instagram.com/",
+    githubicon: FaInstagram,
     deploymenticon: FiLink,
     colors: {
       main: "main-btn",
@@ -173,13 +174,13 @@ export const sideBarRightMail = {
 
 export const sideBarLeftSocials = [
   {
-    link: "https://www.linkedin.com/in/alpay/",
-    icon: FiLinkedin,
+    link: "https://www.needweedusa.com",
+    icon: TbCannabis,
     altimgname: "linkedin",
   },
   {
-    link: "https://github.com/AlpayC",
-    icon: FiGithub,
+    link: "https://instagram.com/",
+    icon: FaInstagram,
     altimgname: "github",
   },
   {
