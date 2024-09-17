@@ -16,7 +16,7 @@ import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 
 const ProjectSlider: React.FC = () => {
-  const { ref } = useSectionInView("Projects");
+  const { ref } = useSectionInView("Street Team");
   const { language } = useLanguage();
   const animationReference = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({

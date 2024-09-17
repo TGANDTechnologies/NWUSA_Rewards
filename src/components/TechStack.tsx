@@ -8,7 +8,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Button from "./Button";
 
 const TechStack: React.FC = () => {
-  const { ref } = useSectionInView("Skills");
+  const { ref } = useSectionInView("Rewards");
   const { theme } = useTheme();
   const { language } = useLanguage();
   const animationReference = useRef<HTMLDivElement>(null);
