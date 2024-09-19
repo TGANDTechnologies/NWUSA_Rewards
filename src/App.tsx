@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import Nwusa from "./pages/Nwusa";
 import ActiveSectionContextProvider from "./context/active-section-context";
 import ThemeContextProvider from "./context/theme-context";
 import LanguageContextProvider from "./context/language-context";
@@ -15,7 +16,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />}></Route>
                 <Route path="/imprint" element={<Home />}></Route>
-                <Route path="/privacy" element={<Home />}></Route>
+                <Route path="/nwusa" element={<Nwusa />}></Route>
               </Routes>
             </ActiveSectionContextProvider>
           </LanguageContextProvider>

@@ -158,7 +158,7 @@ export const navLinks = [
   { de: "Home", en: "Home", hash: "#home", icon: GoHome },
   { de: "Skills", en: "Rewards", hash: "#skills", icon: GoStack },
   { de: "Projekte", en: "Street Team", hash: "#projects", icon: GoProject },
-  { de: "Über mich", en: "NWUSA.com", hash: "https:www.needweedusa.com", icon: GoPerson },
+  { de: "Über mich", en: "NWUSA.com", hash: "nwusa", icon: GoPerson },
   { de: "Kontakt", en: "Contact", hash: "#contact", icon: GoMail },
 ] as const;
 
